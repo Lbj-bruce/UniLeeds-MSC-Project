@@ -99,8 +99,8 @@ def main(config):
     #video_model = slowfast_r50(False).eval().to(device)
     #video_model.load_state_dict(torch.load("R50.pt","cpu")['model_state'])
     video_model = slowfast_r50_detection(True).eval().to(device) #Load slowfast_r50_detection model
-    ava_labelnames,_ = AvaLabeledVideoFramePaths.read_label_map("selfutils/ava_action_list.pbtxt") #Load Category Tags
-    ava_labelnames_abnormal,_ = AvaLabeledVideoFramePaths.read_label_map("selfutils/ava_action_abnormal.pbtxt") #Load abnormal category tag
+    ava_labelnames,_ = AvaLabeledVideoFramePaths.read_label_map("action labels/ava_action_list.pbtxt") #Load Category Tags
+    ava_labelnames_abnormal,_ = AvaLabeledVideoFramePaths.read_label_map("action labels/ava_action_abnormal.pbtxt") #Load abnormal category tag
 
     coco_color_map = [[random.randint(0, 255) for _ in range(3)] for _ in range(80)]
 
