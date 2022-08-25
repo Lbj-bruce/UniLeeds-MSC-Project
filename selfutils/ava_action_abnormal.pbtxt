@@ -1,0 +1,36 @@
+item {
+  name: "crawl"
+  id: 2
+}
+item {
+  name: "fall down"
+  id: 5
+}
+item {
+  name: "jump/leap"
+  id: 7
+}
+item {
+  name: "lie/sleep"
+  id: 8
+}
+item {
+  name: "run/jog"
+  id: 10
+}
+item {
+  name: "smoke"
+  id: 54
+}
+item {
+  name: "fight/hit (a person)"
+  id: 64
+}
+item {
+  name: "kick (a person)"
+  id: 71
+}
+item {
+  name: "push (another person)"
+  id: 76
+}
